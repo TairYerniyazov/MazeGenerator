@@ -1,0 +1,27 @@
+100 100 translate
+
+/drawLine {
+	/row exch def
+	/col exch def
+	/draw exch def
+	/lineType exch def
+
+	/xShift 40 col mul def
+	/yShift 20 totalRows row sub mul def
+
+	draw 1 eq {
+		lineType 1 eq {
+			xShift 40 add yShift moveto
+			0 20 rlineto
+			0 -40 rlineto
+			stroke
+		} {
+			xShift yShift moveto
+			40 0 rlineto
+			stroke
+		} ifelse
+	} if
+} def
+
+2 setlinewidth
+0.5 0 1 setrgbcolor
