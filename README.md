@@ -1,4 +1,4 @@
-# MazeGenerator
+# Maze Generator
 Kruskal's algorithm for generating a maze.
 
 ## Documentation (in Polish)
